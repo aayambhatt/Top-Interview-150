@@ -16,13 +16,13 @@ class Solution {
             int n = nums.size();
              k = k % n; // In case k > n, we take modulo
     
-            // Reverse entire array
+            //Reverse entire array
             reverse(nums, 0, n - 1);
     
-            // Reverse first k elements
+            //Reverse first k elements
             reverse(nums, 0, k - 1);
     
-            // Reverse last n-k elements
+            //Reverse last n-k elements
             reverse(nums, k, n - 1);
     
         }
